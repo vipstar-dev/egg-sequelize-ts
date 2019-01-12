@@ -1,7 +1,7 @@
 {
-  "name": "egg-sequelize",
-  "version": "4.3.1",
-  "description": "egg Sequelize plugin",
+  "name": "egg-sequelize-ts",
+  "version": "0.2.0",
+  "description": "egg Sequelize typescript plugin",
   "eggPlugin": {
     "name": "sequelize"
   },
@@ -10,12 +10,15 @@
     "sequelize",
     "egg-plugin",
     "eggPlugin",
-    "orm"
+    "orm",
+    "typescript"
   ],
   "dependencies": {
-    "@types/sequelize": "^4.27.24",
     "mz-modules": "^2.1.0",
-    "sequelize": "^4.38.0"
+    "reflect-metadata": "^0.1.12",
+    "sequelize": "^4.38.0",
+    "sequelize-typescript": "^0.6.6",
+    "typescript": "^3.1.6"
   },
   "devDependencies": {
     "autod": "^3.0.1",
@@ -47,12 +50,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eggjs/egg-sequelize.git"
+    "url": "git+https://github.com/stone-lyl/egg-sequelize-ts.git"
   },
   "bugs": {
-    "url": "https://github.com/eggjs/egg/issues"
+    "url": "https://github.com/stone-lyl/egg-sequelize-ts/issues"
   },
-  "homepage": "https://github.com/eggjs/egg-sequelize#readme",
-  "author": "jtyjty99999",
+  "homepage": "https://github.com/stone-lyl/egg-sequelize-ts/blob/master/README.md",
+  "author": "jtyjty99999, stone-lyl, ZeekoZhu",
   "license": "MIT"
 }
