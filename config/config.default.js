@@ -9,9 +9,10 @@ exports.sequelize = {
   password: '',
 
   // support customize your own Squelize
-  // Sequelize: require('sequelize'), // v5 or v3
+  // optional
+  // Sequelize: require('sequelize-typescript').Sequelize,
 
-  // support multi datasources by config.sequelize.datasources
+  // todo:support multi datasources by config.sequelize.datasources
   // datasources: [
   //   {
   //     delegate: 'model', // lood to `app[delegate]`
