@@ -1,4 +1,4 @@
-import { Sequelize, ISequelizeValidationOnlyConfig } from 'sequelize-typescript';
+import { Sequelize, ISequelizeValidationOnlyConfig, SequelizeOptions } from 'sequelize-typescript';
 import { SequelizeConfig } from "sequelize-typescript/lib/types/SequelizeConfig";
 
 declare module 'egg' {
@@ -22,6 +22,23 @@ declare module 'egg' {
   }
 
 }
+
+interface EggSequelizeOptions extends SequelizeOptions {
+  delegate?: string;
+  baseDir?: string;
+  exclude?: string | Array<string>;
+  /**
+   * A full database URI
+   * @example
+   * `connectionUri:"mysql://localhost:3306/database"`
+   */
+  connectionUri?: string;
+}
+
+interface DataSources {
+  datasources: EggSequelizeOptions[];
+}
+
 // todo: 实现多配置。
 // interface EggSequelizeOptions extends sequelize.Options {
 //   delegate?: string;
