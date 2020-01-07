@@ -8,6 +8,23 @@
 能让使用 `typescript` 编写的 egg.js 项目中能够使用 sequelize方法，并同时得到egg.js所赋予的功能。
 
 ## 安装
+`egg-sequelize-ts@0.2.3-0` 根据 `egg-sequlize@4.3.1` 模改，主要对应的sequelize版本如下：
+```json
+"dependencies": {
+    "sequelize": "^4.38.0",
+    "sequelize-typescript": "^0.6.6",
+}
+```
+
+`egg-sequelize-ts@` 根据 `egg-sequlize@5.2.1` 模改，主要对应的sequelize版本如下：
+```json
+"dependencies": {
+     "sequelize": "^5.0.0-0",
+    "sequelize-typescript": "1.0.0"
+}
+```
+
+请根据自己的需求安装对应的版本
 ```bash
 $ npm i --save egg-sequelize-ts
 $ yarn add egg-sequelize-ts

@@ -16,9 +16,9 @@
   "dependencies": {
     "mz-modules": "^2.1.0",
     "reflect-metadata": "^0.1.12",
-    "sequelize": "^4.38.0",
-    "sequelize-typescript": "^0.6.6",
-    "typescript": "^3.1.6"
+    "sequelize": "^5.0.0-0",
+    "sequelize-typescript": "1.0.0",
+    "typescript": "3.3.3"
   },
   "devDependencies": {
     "autod": "^3.0.1",
