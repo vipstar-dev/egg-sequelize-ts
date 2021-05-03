@@ -1,5 +1,4 @@
-import { Sequelize, ISequelizeValidationOnlyConfig } from 'sequelize-typescript';
-import { SequelizeConfig } from "sequelize-typescript/lib/types/SequelizeConfig";
+import { Sequelize, SequelizeOptions } from 'sequelize-typescript';
 
 declare module 'egg' {
   // 便于egg 将方法挂载到IModel上
@@ -16,9 +15,9 @@ declare module 'egg' {
     model: IModel;
   }
 
-  // extend your config 
+  // extend your config
   interface EggAppConfig {
-    sequelize: SequelizeConfig | ISequelizeValidationOnlyConfig
+    sequelize: SequelizeOptions
   }
 
 }
